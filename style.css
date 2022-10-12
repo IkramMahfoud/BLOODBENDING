@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgb(29, 29, 29));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 24px;
+    text-align: center;
+    color : white;
+    font-size: 10px;
+    margin-left: 37%;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.353);
+    border-radius: 20px;
+}
+
+.circle {
+    width: 650px;
+    position: absolute;
+    left: 74%;
+    top: 10vw;
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    /* background-color: red; */
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.logo{
+    margin-left: 20px;
+}
+
+
+ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.center{
+    /* background-color: blueviolet; */
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+}
+.text{
+    padding: 30px;
+    height: 60%;
+    width: 45%;
+    /* background-color: aquamarine; */
+    color: aliceblue;
+
+}
+.text p{
+    margin: 17px 0px;
+    line-height: 1.7;
+}
+.text h1{
+    text-align: center;
+}
+
+.text button{
+    border: none;
+    background: #c90000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.image{
+    width: 30%;
+    height: 100%;
+    position: relative;
+
+}
+
+.image img{
+    width: 115%;
+    position: absolute;
+    bottom: 1%;
+    right: 3%;
+}
+
+@media screen and (max-width:480px) {
+
+    .circle {
+        width: 500px;
+        right: 0vw;
+        top: 70vw;
+    }
+
+}
+
+@media screen and (max-width:316px) {
+    .circle {
+        width: 300px;
+        right: 10vw;
+        top: 70vw;
+    }
+
+}
+@media screen and (max-width:316px) and (min-height:500px) {
+    .circle {
+        width: 300px;
+        right: -5vw;
+        top: 160vw;
+    }
+
+}
